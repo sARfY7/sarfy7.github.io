@@ -1,0 +1,164 @@
+$primary: #4b21ff;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.col-1 {
+  background-color: $primary;
+  width: 40%;
+  padding: 50px;
+  box-sizing: border-box;
+  align-items: flex-end;
+}
+
+.col-2 {
+  width: 60%;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: -1;
+}
+
+.profile-container {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 160%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(350px, 400px) minmax(350px, 400px);
+  align-items: center;
+  grid-column-gap: 100px;
+}
+
+.profile-img {
+  background-image: url("../img/Sarfaraz.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 2px 1px 25px -6px #0a09098a;
+  border-radius: 2px;
+}
+
+// .details-container {
+//   width: 100%;
+//   margin-right: 50px;
+//   padding: 20px;
+//   box-sizing: border-box;
+// }
+
+.name {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 80%;
+
+    span {
+      display: block;
+      font-size: 2rem;
+      color: $primary;
+    }
+  }
+}
+
+.role {
+  h4 {
+    margin: 0;
+  }
+}
+
+.intro {
+  p {
+    line-height: 1.687;
+  }
+}
+
+.cta {
+  box-sizing: border-box;
+}
+
+.btn {
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.blue-btn {
+  background-color: $primary;
+  color: #fff;
+}
+
+.social-container {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.s-label {
+  color: #fff;
+  margin-bottom: 10px;
+
+  h4 {
+    margin: 0;
+  }
+}
+
+.s-icons {
+  display: flex;
+  flex-direction: row;
+
+  a {
+    margin-right: 20px;
+
+    .s-icon {
+      width: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+}
